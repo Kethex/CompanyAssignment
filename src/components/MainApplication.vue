@@ -40,7 +40,7 @@
     </div>
 </template>
 
-<script>
+<script lang="ts">
 
 import BikeList from './BikeList.vue'
 
