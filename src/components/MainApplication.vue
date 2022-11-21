@@ -98,7 +98,7 @@ export default {
 
       })
 
-      console.log(stations)
+
       this.stations = stations
 
     },
@@ -107,7 +107,6 @@ export default {
 
       stations.sort((a, b) => { return a.free_bikes + b.free_bikes })
 
-      console.log(stations)
       this.stations = stations
 
     },
@@ -122,7 +121,6 @@ export default {
         return a_date - b_date
       })
 
-      console.log(stations)
       this.stations = stations
     }}
     
