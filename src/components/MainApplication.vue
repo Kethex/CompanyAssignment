@@ -1,7 +1,7 @@
 <template>
   <div class="mainApp">
   <div class="formSubmission my-5">
-    <h1>{{ msg }}</h1>
+    <h1>{{ title }}</h1>
     <p>
       Submit the longitude and latitude of any location below.
     </p>
@@ -40,7 +40,7 @@
     </div>
 </template>
 
-<script lang="ts">
+<script>
 
 import BikeList from './BikeList.vue'
 
@@ -55,7 +55,7 @@ export default {
   },
 
   props: {
-    msg: String
+    title: String
   },
 
   data() {
@@ -116,8 +116,8 @@ export default {
 
       stations.sort((a, b) => {
 
-        let a_date = new Date(a.timestamp)
-        let b_date = new Date(b.timestamp)
+        let a_date = new Date(a.timestamp).getTime()
+        let b_date = new Date(b.timestamp).getTime()
 
         return a_date - b_date
       })

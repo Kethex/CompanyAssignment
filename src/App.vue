@@ -4,7 +4,7 @@
         <a class="navbar-brand mx-3" href="#">CityBikes Assignment</a>
     </nav>
     <div id="app">
-      <MainApplication msg="CityBikes"/>
+      <MainApplication title="CityBikes"/>
     </div>
   </div>
 </template>
